@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SHOW PAGE</title>
+</head>
+<body>
+	<table align="center" border="3" bordercolor="red" bgcolor="black">
+		<tr>
+			<th>FirstName</th>
+			<th>LastName</th>
+			<th>EmailID</th>
+			<th>Password</th>
+			<th>Mobile</th>
+		</tr>
+		{% for i in obj %}
+		<tr>
+			<td>{{i.name}}</td>
+			<td>{{i.surname}}</td>
+			<td>{{i.address}}</td>
+			<td>{{i.phoneno}}</td>
+			<td>{{i.emailid}}</td>
+		</tr>
+		{% endfor %}
+	</table>
+</body>
+</html>
